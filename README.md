@@ -50,7 +50,7 @@ A Spring Boot API for managing government-funded training centers (MVP).
 }
 ```
 
-**response**:
+**Response**:
 ```json
 {
     "centerName": "Mumbai Tech Institute",
@@ -74,7 +74,7 @@ A Spring Boot API for managing government-funded training centers (MVP).
 ### 2. Get All Centers (GET)
 **URL**: `GET http://localhost:8080/api/training-centers`
 
-**response**:
+**Response**:
 ```json
 [
     {
