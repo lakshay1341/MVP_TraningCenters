@@ -36,7 +36,7 @@ A Spring Boot API for managing government-funded training centers (MVP).
 ```json
 {
     "centerName": "Mumbai Tech Institute",
-    "centerCode": "MUMTECH2024AB",
+    "centerCode": "MUMTECH2024A",
     "address": {
         "detailedAddress": "Tech Valley, Andheri East",
         "city": "Mumbai",
@@ -50,8 +50,69 @@ A Spring Boot API for managing government-funded training centers (MVP).
 }
 ```
 
+**response**:
+```json
+{
+    "centerName": "Mumbai Tech Institute",
+    "centerCode": "MUMTECH2024A",
+    "address": {
+        "detailedAddress": "Tech Valley, Andheri East",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": 400069
+    },
+    "studentCapacity": 500,
+    "coursesOffered": [
+        "Java",
+        "Python"
+    ],
+    "contactEmail": "info@mumbaiti.com",
+    "contactPhone": "9876543210"
+}
+```
+
 ### 2. Get All Centers (GET)
 **URL**: `GET http://localhost:8080/api/training-centers`
+
+**response**:
+```json
+[
+    {
+        "centerName": "Mumbai IT Institute",
+        "centerCode": "MUMIT2024XYZ",
+        "address": {
+            "detailedAddress": "45/B, Tech Park",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "pincode": 400001
+        },
+        "studentCapacity": 500,
+        "coursesOffered": [
+            "Java",
+            "Python"
+        ],
+        "contactEmail": "info@mumbaiit.com",
+        "contactPhone": "9876543210"
+    },
+    {
+        "centerName": "Delhi Skill Hub",
+        "centerCode": "DELSKILL2024",
+        "address": {
+            "detailedAddress": "22/7, Connaught Place",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "pincode": 110001
+        },
+        "studentCapacity": 750,
+        "coursesOffered": [
+            "Web Development",
+            "AI Basics"
+        ],
+        "contactEmail": "contact@delhiskillhub.in",
+        "contactPhone": "8887766554"
+    }
+]
+```
 
 ## Validations
 | Field             | Rules                                                                 |
